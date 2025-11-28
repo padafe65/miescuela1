@@ -164,17 +164,27 @@ const eliminarUsuario = async (id: number) => {
                     <th>Nombre</th>
                     <th>Correo</th>
                     <th>Rol</th>
+<<<<<<< HEAD
                     <th>Acciones</th>
                   </tr>
                 </thead>
 
+=======
+                    <th>Acciones</th> {/* Nueva columna */}
+                  </tr>
+                </thead>
+>>>>>>> 75618b7055a943d7e8c8c696684742aceeac3885
                 <tbody>
                   {usuarios.map((u) => (
                     <tr key={u.id}>
                       <td>{u.id}</td>
                       <td>{u.nombre_completo}</td>
                       <td>{u.correo}</td>
+<<<<<<< HEAD
                       <td>{Array.isArray(u.rol) ? u.rol.join(", ") : String(u.rol)}</td>
+=======
+                      <td>{u.rol}</td>
+>>>>>>> 75618b7055a943d7e8c8c696684742aceeac3885
                       <td>
                         <button
                           onClick={() => editarUsuario(u.id)}

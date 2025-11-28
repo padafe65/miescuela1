@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -65,3 +66,9 @@ export class EstudiantesService {
     return this.estudianteRepo.remove(estudiante);
   }
 }
+=======
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class EstudiantesService {}
+>>>>>>> 75618b7055a943d7e8c8c696684742aceeac3885

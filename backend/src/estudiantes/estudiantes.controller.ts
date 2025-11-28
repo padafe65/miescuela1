@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Controller,
   Get,
@@ -52,3 +53,9 @@ export class EstudiantesController {
     return this.estudiantesService.remove(+id);
   }
 }
+=======
+import { Controller } from '@nestjs/common';
+
+@Controller('estudiantes')
+export class EstudiantesController {}
+>>>>>>> 75618b7055a943d7e8c8c696684742aceeac3885
